@@ -1,6 +1,5 @@
 package opgave01.models;
 
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,14 +7,15 @@ import org.junit.jupiter.api.Test;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class LinkedStackTest {
+public class ArraylistStackTest {
 
     StackEaaa<String> sut;
 
     @BeforeEach
     void initialize() {
-        sut = new LinkedStack<>();
+        sut = new ArraylistStack<>();
     }
 
 
@@ -114,4 +114,5 @@ class LinkedStackTest {
         sut.pop();
         assertEquals(0, sut.size());
     }
+
 }
